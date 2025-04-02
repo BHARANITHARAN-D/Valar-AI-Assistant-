@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+}
+
+.image-container {
+    padding: 10px;
+    text-align: center;
+}
+
+.image img {
+    width: 350px;
+}
+
+.image-container h1 {
+    color: #00bcd4;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.image-container p {
+    color: #324042;
+    margin-bottom: 40px;
+}
+
+.content-area {
+    width: 80%;
+    height: 300px;
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    overflow-y: auto;
+    color: #00bcd4;
+    border: 1px solid #324042;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    flex: 1;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    background: rgba(202, 253, 255, 0.5);
+    color: #fff;
+    resize: none;
+    min-height: 50px;
+}
+
+.send-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: #00bcd4;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.send-btn:hover {
+    background: #0097a7;
+}
+
+.voice-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.voice-status {
+    color: #324042;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 8px 12px;
+    border-radius: 15px;
+    max-width: 80%;
+}
+
+.user-message {
+    background: rgba(0, 188, 212, 0.1);
+    margin-left: auto;
+}
+
+.bot-message {
+    background: rgba(50, 64, 66, 0.3);
+    margin-right: auto;
+}
+
+.custom-mic {
+    background-color: rgba(202, 253, 255, 0.5);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: none;
+}
+
+.custom-mic:hover {
+    background: #00bcd4;
+  }
